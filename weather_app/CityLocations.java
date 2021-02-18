@@ -12,29 +12,17 @@ public class CityLocations {
        this.longitude = longitude;
     }
 
-    /**
-     * @requires name is intialized
-     * @ensures returns name
-     * @return
-     */
+   
     public String getName(){
         return name;
     }
 
-    /**
-     * @requires lattitude is intialized
-     * @ensures returns lattitude
-     * @return
-     */
+    
     public String getLattitude(){
         return lattitude;
     }
 
-    /**
-     * @requires longitude is intialized
-     * @ensures returns Longitude
-     * @return
-     */
+   
     public String getLongitude(){
         return longitude;
     }

@@ -68,9 +68,4 @@ public class WeatherInfo {
             requestQueue.add(jsonObjectRequest);
         }
     }
-
-   
-    private void buildCitiesList(){
-       cities.add(new CityLocations("Clemson","34.683437","-82.837364"));
-    }
 }

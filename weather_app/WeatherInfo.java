@@ -87,8 +87,5 @@ public class WeatherInfo {
      */
     private void buildCitiesList(){
        cities.add(new CityLocations("Clemson","34.683437","-82.837364"));
-       cities.add(new CityLocations("Columbia","34.0007104","-81.0348144"));
-       cities.add(new CityLocations("New York","40.730610","-73.935242"));
-       cities.add(new CityLocations("Seattle","47.608013","-122.335167"));
     }
 }

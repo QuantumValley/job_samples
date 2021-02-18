@@ -26,31 +26,19 @@ public class WeatherInfo {
         setCitiesInfo();
     }
 
-    /**
-     * @requires citiesInfo != null
-     * @ensures return List<CitiesInfo>
-     * @return
-     */
+    
     public ArrayList<CitiesInfo> getCitiesInfo(){
         return citiesInfo;
     }
 
-    /**
-     * @requires urlAPI has url value
-     * @ensures that the lattitude and longitude is appended to the url
-     * @param cRef
-     * @return
-     */
+   
     private String appendLatLong(CityLocations cRef){
         String tempUrl = urlAPI;
         tempUrl+=cRef.getLattitude()+","+cRef.getLongitude();
         return tempUrl;
     }
 
-    /**
-     * @requires CityLocations array to be populated
-     * @ensures that list is populated with temperture, weather conditions, and city name values
-     */
+    
     private void setCitiesInfo(){
         String url;
         requestQueue = Volley.newRequestQueue(context);
@@ -81,10 +69,7 @@ public class WeatherInfo {
         }
     }
 
-    /**
-     * @requires an empty list
-     * @ensures that list is poplated with CityLocation values
-     */
+   
     private void buildCitiesList(){
        cities.add(new CityLocations("Clemson","34.683437","-82.837364"));
     }
